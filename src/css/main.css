@@ -1,0 +1,26 @@
+
+.pin-top {
+  position: relative;
+}
+
+.pin-bottom {
+  position: relative;
+}
+
+.pinned {
+  position: fixed !important;
+}
+
+
+footer.page-footer {
+  background-color: #26a69a;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+nav .brand-logo {
+  padding-left: 10px;
+  font-size: 3.1rem;
+}

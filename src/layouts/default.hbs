@@ -1,0 +1,56 @@
+---
+title: Assemble and Materialize welded together
+---
+<!DOCTYPE html>
+<html>
+<head>
+<!--(if target dev)><!-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
+<!--<!(endif)-->
+
+
+<!--(if target prod)>
+  <link type="text/css" rel="stylesheet" href="css/screen.css"  media="screen,projection"/>
+<!(endif)-->
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!--(if target dev)><!-->
+  <script type="text/javascript" src="js/webfont.js"></script>
+<!--<!(endif)-->
+
+
+<!--(if target prod)>
+  <script type="text/javascript" src="js/head.js"></script>
+<!(endif)-->
+
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Material Icons']
+      }
+    });
+  </script>
+  <title>{{title}}</title>
+</head>
+
+<body>
+{{> body }}
+<!--(if target dev)><!-->
+	<script src="https://experiments-onesrq.c9users.io:8082/livereload.js"></script>
+
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/helpers.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+<!--<!(endif)-->
+
+
+<!--(if target prod)>
+  <script type="text/javascript" src="js/foot.js"></script>
+<!(endif)-->
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+	{{> navbar-top  }}
+        <li><a href="#"><i class="material-icons">search</i></a></li>
+        <li><a href="#"><i class="material-icons">view_module</i></a></li>
+        <li><a href="#"><i class="material-icons">refresh</i></a></li>
+        <li><a href="#"><i class="material-icons">more_vert</i></a></li>
+	{{> navbar-bottom  }}
+
+  <div class="container">
+    <div class="row">
+      <div class="col s4">
+				{{{ md "src/content/page/index-content/header.md" }}}
+      </div>
+      <div class="col s8">
+				<!-- One -->
+					<div class="section scrollspy" id="one">
+						{{{ md "src/content/page/index-content/section1.md" }}}
+					</div>
+ 					<div class="divider"></div>
+				<!-- Two -->
+					<div class="section scrollspy" id="two">
+						{{{ md "src/content/page/index-content/section2.md" }}}
+					</div>
+ 					<div class="divider"></div>
+				<!-- Three -->
+					<div class="section scrollspy" id="three">
+						{{{ md "src/content/page/index-content/section3.md" }}}
+					</div>
+					
+					<div class="section scrollspy" id="four">
+						{{{ md "src/content/page/index-content/section4.md" }}}
+						<div class="row">
+					    <form class="col s12" netlify>
+					      <div class="row">
+					        <div class="input-field col s6">
+					          <input id="first_name" type="text" class="validate">
+					          <label for="first_name">First Name</label>
+					        </div>
+					        <div class="input-field col s6">
+					          <input id="last_name" type="text" class="validate">
+					          <label for="last_name">Last Name</label>
+					        </div>
+					      </div>
+					      <div class="row">
+					        <div class="input-field col s12">
+					          <input id="email" type="email" class="validate">
+					          <label for="email">Email</label>
+					        </div>
+					      </div>
+					      <div class="row">
+					        <div class="input-field col s12">
+					          <textarea id="textarea1" class="materialize-textarea"></textarea>
+					          <label for="textarea1">Message</label>
+					        </div>
+					      </div>
+					      <button class="waves-effect waves-light btn">Dispatch Messenger Hamster</button>
+					    </form>
+					  </div>
+					</div>
+      </div>
+    </div>
+  </div>
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+								{{{ md "src/content/page/index-content/footer.md" }}}
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Visit the 1SRQ family</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="http://www.sherriefindsfashion.com">Sherrie Finds Fashion</a></li>
+                  <li><a class="grey-text text-lighten-3" href="http://www.nailsbynani.com">Nails by Nani</a></li>
+                  <li><a class="grey-text text-lighten-3" href="http://www.nani.photography">Nani Photography</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            Copyright 2016 1SRQ
+            </div>
+          </div>
+        </footer>
