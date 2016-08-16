@@ -2,29 +2,30 @@
 A basic one page template using Grunt, Assemble.io and the Materialize framework
 
 
-Requirements:
-Install NodeJS (works on all platforms)
-Should include NPM, the package manager
+## Requirements
 
-Install Grunt CLI:
+NodeJS and NPM
+
+### Install Grunt CLI
 
 ```bash
 npm install -g grunt-cli
 ```
 
-Then go to the checked out code, install the necessary modules automagically:
+### Install requirements
+Then go to the project root and make npm install the necessary modules automagically:
 
 ```bash
 npm install
 ```
 
-Then run grunt:
+### Running Grunt
 
-```bash
-grunt
-```
+You can run grunt the usual way. with ```grunt``` Other options 
+include ```grunt prod``` to assemble the production verision (Uglify and friends) or
+```grunt watch``` to run a development version with live reload.
 
-What is this?
+What is assemble-materialize?
 --------------------------
 
 It's a website.
