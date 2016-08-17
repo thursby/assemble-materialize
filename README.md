@@ -2,9 +2,9 @@
 A basic one page template using Grunt, Assemble.io and the Materialize framework
 
 
-## Requirements
-
-NodeJS and NPM
+## Quick Start
+The fastest way to get started is to clone the project into Cloud9 and start hacking.
+Use the HTML5 template and then install the prereqs with Grunt
 
 ### Install Grunt CLI
 
@@ -19,21 +19,16 @@ Then go to the project root and ask npm to install the necessary modules automag
 npm install
 ```
 
-### Borrowed and/or stolen
-This project wouldn't exist were it not for the countless hours spend developing 
-the shoulders it stands upon.
-
-- Assemble - http://assemble.io
-- Materialize - http://materializecss.com
-- Material Design - https://material.google.com/
-- HTML5 Boilerplate - https://github.com/h5bp
-- jQuery - https://jquery.com/
-
 ### Running Grunt
 
-You can run grunt the usual way. with ```grunt``` Other options 
-include ```grunt prod``` to assemble the production verision (Uglify and friends) or
-```grunt watch``` to run a development version with live reload.
+You can run grunt the usual way with ```grunt``` and this will build a development version of the project.
+The JS and CSS resources will be copied rather than minified.
+
+Use ```grunt prod``` to assemble the production verision using Uglify and friends. 
+This also performs cache busting to ensure a consistent experience.
+
+The ```grunt watch``` command is perfect for development, as it will reload after
+any file change is detected. This also works with Cloud9's LiveReload feature.
 
 What is assemble-materialize?
 --------------------------
@@ -79,3 +74,13 @@ This page is hosted for free thanks to [GitHub Pages](https://pages.github.com).
 In fact, static sites can use cutting edge technology like 
 [Netlify](http://www.netlify.com) as a host. Services like Netlify host static 
 sites on their custom built CDN in multiple locations around the planet.
+
+### Borrowed and/or stolen
+This project wouldn't exist were it not for the countless hours spend developing 
+the shoulders it stands upon.
+
+- Assemble - http://assemble.io
+- Materialize - http://materializecss.com
+- Material Design - https://material.google.com/
+- HTML5 Boilerplate - https://github.com/h5bp
+- jQuery - https://jquery.com/
