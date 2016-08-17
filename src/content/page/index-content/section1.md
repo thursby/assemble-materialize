@@ -1,7 +1,7 @@
 What is this?
 --------------------------
 
-It's a website.
+It's a website template.
 
 Specifically, it's a starter template to help create a modern,
 full featured website, but in a way that is simultaneously fast, cheap, and easy.
