@@ -1,0 +1,24 @@
+{
+  "name": "assemble-materialize",
+  "description": "Assemble.io and Materialize munged together",
+  "main": "Gruntfile.coffee",
+  "authors": [
+    "Wayne Thursby"
+  ],
+  "license": "MiT",
+  "keywords": [
+    "Assemble.io",
+    "Materialize",
+    "Material",
+    "Static"
+  ],
+  "homepage": "https://github.com/thursby/assemble-materialize",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
