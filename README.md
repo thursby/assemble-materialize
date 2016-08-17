@@ -13,11 +13,21 @@ npm install -g grunt-cli
 ```
 
 ### Install requirements
-Then go to the project root and make npm install the necessary modules automagically:
+Then go to the project root and ask npm to install the necessary modules automagically:
 
 ```bash
 npm install
 ```
+
+### Borrowed and/or stolen
+This project wouldn't exist were it not for the countless hours spend developing 
+the shoulders it stands upon.
+
+- Assemble - http://assemble.io
+- Materialize - http://materializecss.com
+- Material Design - https://material.google.com/
+- HTML5 Boilerplate - https://github.com/h5bp
+- jQuery - https://jquery.com/
 
 ### Running Grunt
 
