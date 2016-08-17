@@ -66,6 +66,16 @@
               cwd: 'src/js/',
               src: '**',
               dest: 'dist/js/'
+            }, {
+              expand: true,
+              flatten: true,
+              src: 'bower_components/jquery/dist/jquery.js',
+              dest: 'dist/js/'
+            }, {
+              expand: true,
+              flatten: true,
+              src: 'bower_components/materialize/dist/js/materialize.js',
+              dest: 'dist/js/'
             }
           ]
         }
@@ -76,7 +86,7 @@
         },
         dist: {
           files: {
-            'dist/css/materialize.css': 'src/sass/materialize.scss'
+            'dist/css/materialize.css': 'bower_components/materialize/sass/materialize.scss'
           }
         }
       },
@@ -101,7 +111,7 @@
         },
         target: {
           files: {
-            'dist/css/screen.css': ['src/css/main.css', 'dist/css/materialize.css']
+            'dist/css/screen.css': ['dist/css/materialize.css', 'src/css/main.css']
           }
         }
       },
@@ -159,7 +169,7 @@
           mangle: true,
           nonull: true,
           files: {
-            'dist/js/foot.js': ['src/js/jquery-2.1.1.min.js', 'src/js/materialize.js', 'src/js/helpers.js', 'src/js/main.js'],
+            'dist/js/foot.js': ['bower_components/jquery/dist/jquery.js', 'bower_components/materialize/dist/js/materialize.js', 'src/js/helpers.js', 'src/js/main.js'],
             'dist/js/head.js': ['src/js/webfont.js']
           }
         }

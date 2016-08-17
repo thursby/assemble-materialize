@@ -1,5 +1,5 @@
   <div id="toc">
-  <h4>assemble-materialize</h4>
+  <h4>Assemble.io<br>meets<br>Materialize</h4>
   <ul class="section table-of-contents">
   <li><a href="#one" class="collection-item">What is this?</a></li>
   <li><a href="#two" class="collection-item">What's it good for?</a></li>

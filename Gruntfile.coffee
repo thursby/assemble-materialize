@@ -74,13 +74,26 @@ module.exports = (grunt) ->
           cwd: 'src/js/'
           src: '**'
           dest: 'dist/js/'
+        ,
+        # Copy jQuery
+          expand: true
+          flatten: true
+          src: 'bower_components/jquery/dist/jquery.js'
+          dest: 'dist/js/'
+        ,
+        # Copy Materialize
+          expand: true
+          flatten: true
+          src: 'bower_components/materialize/dist/js/materialize.js'
+          dest: 'dist/js/'
         ]
     sass:
       options:
         sourceMap: true
       dist:
         files:
-          'dist/css/materialize.css': 'src/sass/materialize.scss'
+          'dist/css/materialize.css':
+            'bower_components/materialize/sass/materialize.scss'
 
     # Run Assemble.io to compile the Handlebars templates
     assemble:
@@ -105,8 +118,8 @@ module.exports = (grunt) ->
       target:
         files:
           'dist/css/screen.css': [
-            'src/css/main.css'
             'dist/css/materialize.css'
+            'src/css/main.css'
           ]
 
     targethtml:
@@ -170,8 +183,8 @@ module.exports = (grunt) ->
         nonull: true
         files:
           'dist/js/foot.js': [
-            'src/js/jquery-2.1.1.min.js'
-            'src/js/materialize.js'
+            'bower_components/jquery/dist/jquery.js'
+            'bower_components/materialize/dist/js/materialize.js'
             'src/js/helpers.js'
             'src/js/main.js'
           ],
