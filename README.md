@@ -80,11 +80,15 @@ As long as it meets requirements, a static site will be cheaper to build,
 cheaper to run, and cheaper to maintain. All of this without sacrificing 
 performance. 
 
-This page is hosted for free thanks to [GitHub Pages](https://pages.github.com).
+This page is hosted for free on [GitHub Pages](https://pages.github.com) but
+since it's static, it could be reliably hosted from anywhere, with even the 
+smallest hosting plans.
 
-In fact, static sites can use cutting edge technology like 
-[Netlify](http://www.netlify.com) as a host. Services like Netlify host static 
-sites on their custom built CDN in multiple locations around the planet.
+The real benefit is when using production grade hosting services with static
+sites. Services like [Netlify](http://www.netlify.com) take static sites and
+make them sing with a custom built hybrid CDN using the best-of-the-best for
+each piece of the puzzle. The best part is all of this happens automatically
+so there's no need to micromanage instances or resources.
 
 What about performance?
 --------------------
@@ -94,4 +98,5 @@ to use build systems like Grunt can help, but the flexibility of these tools
 means there are any number of ways of [Doing It Wrong](http://doingitwrong.com).
 
 The build system utilizes Grunt in all the right ways to produce a site that is
-optimized and cache proof.
+optimized and cache proof. Combine this with the power of Netlify, and sites
+can be easily hosted anywhere and still be hackernews-proof.
