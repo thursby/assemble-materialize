@@ -5,12 +5,13 @@ A basic template for creating sites with the Assemble and the Materialize framew
 Grunt has been configured for optimal goodness
 * **Minified** - CSS and JS assets are bundled and minified into header and footer
 * **Cache-proof** - All resources are referenced with a cache-busting suffix to ensure that there are never any problems with stale assets.
+* **Optimized Development** - Coffescript based Gruntfile automatically loads Grunt modules from package.json to reduce boilerplate
 * **Friendly Editing Experience** - Edit the content in Markdown with  HTML sprinkled in wherever you'd like
-* **Live View** - View the actual website while editing and have it reload right in your browser (on Cloud9 at least)
+* **Live View** - View the actual website while editing and have it reload right in your browser (on [Cloud9](http://cloud9.io))
 
 ## Requirements
 
-NodeJS and NPM
+Node.js and NPM
 
 ### Install Grunt CLI
 
@@ -26,7 +27,7 @@ npm install
 ```
 
 ### Borrowed and/or stolen
-This project wouldn't exist were it not for the countless hours spend developing 
+This project wouldn't exist were it not for the countless hours spent developing 
 the shoulders it stands upon.
 
 - Assemble - http://assemble.io
@@ -37,9 +38,9 @@ the shoulders it stands upon.
 
 ### Running Grunt
 
-You can run grunt the usual way. with ```grunt``` Other options 
+You can run grunt the usual way with ```grunt```. Other options 
 include ```grunt prod``` to assemble the production verision (Uglify and friends) or
-```grunt watch``` to run a development version with live reload.
+```grunt watch``` to run a development version with live reload (on [Cloud9](http://cloud9.io)).
 
 What is assemble-materialize?
 --------------------------
