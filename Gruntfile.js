@@ -1,5 +1,8 @@
 (function() {
   module.exports = function(grunt) {
+    var js_foot, js_head;
+    js_foot = ['bower_components/jquery/dist/jquery.js', 'bower_components/materialize/dist/js/materialize.js', 'src/js/helpers.js', 'src/js/main.js'];
+    js_head = ['src/js/webfont.js'];
     require('load-grunt-tasks')(grunt);
     grunt.initConfig({
       pkg: grunt.file.readJSON('./package.json'),
@@ -63,18 +66,12 @@
             {
               expand: true,
               flatten: true,
-              cwd: 'src/js/',
-              src: '**',
+              src: js_head,
               dest: 'dist/js/'
             }, {
               expand: true,
               flatten: true,
-              src: 'bower_components/jquery/dist/jquery.js',
-              dest: 'dist/js/'
-            }, {
-              expand: true,
-              flatten: true,
-              src: 'bower_components/materialize/dist/js/materialize.js',
+              src: js_foot,
               dest: 'dist/js/'
             }
           ]
@@ -169,8 +166,8 @@
           mangle: true,
           nonull: true,
           files: {
-            'dist/js/foot.js': ['bower_components/jquery/dist/jquery.js', 'bower_components/materialize/dist/js/materialize.js', 'src/js/helpers.js', 'src/js/main.js'],
-            'dist/js/head.js': ['src/js/webfont.js']
+            'dist/js/foot.js': js_foot,
+            'dist/js/head.js': js_head
           }
         }
       },
