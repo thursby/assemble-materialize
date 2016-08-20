@@ -1,5 +1,17 @@
 module.exports = (grunt) ->
   
+  # Define all JavaScript Resources used in the project
+  js_foot = [
+    'bower_components/jquery/dist/jquery.js'
+    'bower_components/materialize/dist/js/materialize.js'
+    'src/js/helpers.js'
+    'src/js/main.js'
+  ]
+  
+  js_head = [
+    'src/js/webfont.js'
+  ]
+  
   # Use load-grunt-tasks to source our loadNpmTasks from package.json
   require('load-grunt-tasks') grunt
   
@@ -68,23 +80,16 @@ module.exports = (grunt) ->
         ]
       js:
         files: [
-        # Copy JavaScript and CoffeeScript files
+        # Copy Header JavaScript files
           expand: true
           flatten: true
-          cwd: 'src/js/'
-          src: '**'
+          src: js_head
           dest: 'dist/js/'
         ,
-        # Copy jQuery
+        # Copy Footer JavaScript files
           expand: true
           flatten: true
-          src: 'bower_components/jquery/dist/jquery.js'
-          dest: 'dist/js/'
-        ,
-        # Copy Materialize
-          expand: true
-          flatten: true
-          src: 'bower_components/materialize/dist/js/materialize.js'
+          src: js_foot
           dest: 'dist/js/'
         ]
     sass:
@@ -182,15 +187,8 @@ module.exports = (grunt) ->
         mangle: true
         nonull: true
         files:
-          'dist/js/foot.js': [
-            'bower_components/jquery/dist/jquery.js'
-            'bower_components/materialize/dist/js/materialize.js'
-            'src/js/helpers.js'
-            'src/js/main.js'
-          ],
-          'dist/js/head.js': [
-            'src/js/webfont.js'
-          ]
+          'dist/js/foot.js': js_foot
+          'dist/js/head.js': js_head
 
     cacheBust:
       prod:
