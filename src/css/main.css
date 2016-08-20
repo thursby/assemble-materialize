@@ -1,29 +1,4 @@
 
-.pin-top {
-  position: relative;
-}
-
-.pin-bottom {
-  position: relative;
-}
-
-.pinned {
-  position: fixed !important;
-}
-
-
-footer.page-footer {
-  background-color: #26a69a;
-}
-
-body {
-  background-color: #f0f0f0;
-}
-
-nav .brand-logo {
-  padding-left: 10px;
-  font-size: 3.1rem;
-}
 
 /* for Parallax */
 /* Custom Stylesheet */
@@ -82,4 +57,8 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+h5.header {
+  text-shadow: 0 0 8px black, 0 0 6px black;
 }
