@@ -1,9 +1,9 @@
-  <div id="toc">
-  <h4>Assemble<br>meets<br>Materialize</h4>
-  <ul class="section table-of-contents">
-  <li><a href="#one" class="collection-item">What is this?</a></li>
-  <li><a href="#two" class="collection-item">What's it good for?</a></li>
-  <li><a href="#three" class="collection-item">Why would anyone do that?</a></li>
-  <li><a href="#four" class="collection-item">How can I give you money?</a></li>
-  </ul>
-  </div>
+<br><br>
+<h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
+<div class="row center">
+  <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+</div>
+<div class="row center">
+  <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+</div>
+<br><br>

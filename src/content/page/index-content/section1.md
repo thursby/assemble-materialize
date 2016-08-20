@@ -1,5 +1,5 @@
-What is this?
---------------------------
+<h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+<h5 class="center">What is this?</h5>
 
 It's a website template.
 

@@ -5,13 +5,12 @@ A basic template for creating sites with the Assemble and the Materialize framew
 Grunt has been configured for optimal goodness
 * **Minified** - CSS and JS assets are bundled and minified into header and footer
 * **Cache-proof** - All resources are referenced with a cache-busting suffix to ensure that there are never any problems with stale assets.
-* **Optimized Development** - Coffescript based Gruntfile automatically loads Grunt modules from package.json to reduce boilerplate
 * **Friendly Editing Experience** - Edit the content in Markdown with  HTML sprinkled in wherever you'd like
-* **Live View** - View the actual website while editing and have it reload right in your browser (on [Cloud9](http://cloud9.io))
+* **Live View** - View the actual website while editing and have it reload right in your browser (on Cloud9 at least)
 
 ## Requirements
 
-Node.js and NPM
+NodeJS and NPM
 
 ### Install Grunt CLI
 
@@ -27,7 +26,7 @@ npm install
 ```
 
 ### Borrowed and/or stolen
-This project wouldn't exist were it not for the countless hours spent developing 
+This project wouldn't exist were it not for the countless hours spend developing 
 the shoulders it stands upon.
 
 - Assemble - http://assemble.io
@@ -38,9 +37,9 @@ the shoulders it stands upon.
 
 ### Running Grunt
 
-You can run grunt the usual way with ```grunt```. Other options 
+You can run grunt the usual way. with ```grunt``` Other options 
 include ```grunt prod``` to assemble the production verision (Uglify and friends) or
-```grunt watch``` to run a development version with live reload (on [Cloud9](http://cloud9.io)).
+```grunt watch``` to run a development version with live reload.
 
 What is assemble-materialize?
 --------------------------
@@ -81,15 +80,11 @@ As long as it meets requirements, a static site will be cheaper to build,
 cheaper to run, and cheaper to maintain. All of this without sacrificing 
 performance. 
 
-This page is hosted for free on [GitHub Pages](https://pages.github.com) but
-since it's static, it could be reliably hosted from anywhere, with even the 
-smallest hosting plans.
+This page is hosted for free thanks to [GitHub Pages](https://pages.github.com).
 
-The real benefit is when using production grade hosting services with static
-sites. Services like [Netlify](http://www.netlify.com) take static sites and
-make them sing with a custom built hybrid CDN using the best-of-the-best for
-each piece of the puzzle. The best part is all of this happens automatically
-so there's no need to micromanage instances or resources.
+In fact, static sites can use cutting edge technology like 
+[Netlify](http://www.netlify.com) as a host. Services like Netlify host static 
+sites on their custom built CDN in multiple locations around the planet.
 
 What about performance?
 --------------------
@@ -99,5 +94,4 @@ to use build systems like Grunt can help, but the flexibility of these tools
 means there are any number of ways of [Doing It Wrong](http://doingitwrong.com).
 
 The build system utilizes Grunt in all the right ways to produce a site that is
-optimized and cache proof. Combine this with the power of Netlify, and sites
-can be easily hosted anywhere and still be hackernews-proof.
+optimized and cache proof.
