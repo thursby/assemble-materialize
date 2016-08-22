@@ -26,8 +26,8 @@ npm install
 ```
 
 ### Borrowed and/or stolen
-This project wouldn't exist were it not for the countless hours spend developing 
-the shoulders it stands upon.
+This project wouldn't exist were it not for the countless hours spent developing 
+the mighty shoulders it stands upon.
 
 - Assemble - http://assemble.io
 - Materialize - http://materializecss.com
@@ -37,7 +37,7 @@ the shoulders it stands upon.
 
 ### Running Grunt
 
-You can run grunt the usual way. with ```grunt``` Other options 
+You can run grunt the usual way. with ```grunt```. Other options 
 include ```grunt prod``` to assemble the production verision (Uglify and friends) or
 ```grunt watch``` to run a development version with live reload.
 
