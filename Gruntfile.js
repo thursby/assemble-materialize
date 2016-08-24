@@ -1,7 +1,7 @@
 (function() {
   module.exports = function(grunt) {
     var js_foot, js_head;
-    js_foot = ['bower_components/jquery/dist/jquery.js', 'bower_components/materialize/dist/js/materialize.js', 'src/js/helpers.js', 'src/js/main.js'];
+    js_foot = ['bower_components/jquery/dist/jquery.js', 'bower_components/materialize/dist/js/materialize.js', 'bower_components/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js', 'src/js/helpers.js', 'src/js/main.js'];
     js_head = ['src/js/webfont.js'];
     require('load-grunt-tasks')(grunt);
     grunt.initConfig({
@@ -58,6 +58,11 @@
               cwd: 'src/css/',
               src: '**',
               dest: 'dist/css'
+            }, {
+              expand: true,
+              cwd: 'bower_components/jquery.mb.ytplayer/dist/css/',
+              src: 'jquery.mb.YTPlayer.min.css',
+              dest: 'dist/css/'
             }
           ]
         },
@@ -108,7 +113,7 @@
         },
         target: {
           files: {
-            'dist/css/screen.css': ['dist/css/materialize.css', 'src/css/main.css']
+            'dist/css/screen.css': ['dist/css/materialize.css', 'dist/css/jquery.mb.YTPlayer.min.css', 'src/css/main.css']
           }
         }
       },

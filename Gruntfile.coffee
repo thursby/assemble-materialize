@@ -4,6 +4,8 @@ module.exports = (grunt) ->
   js_foot = [
     'bower_components/jquery/dist/jquery.js'
     'bower_components/materialize/dist/js/materialize.js'
+    'bower_components/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js'
+    'bower_components/fullpage.js/dist/jquery.fullpage.js'
     'src/js/helpers.js'
     'src/js/main.js'
   ]
@@ -77,6 +79,18 @@ module.exports = (grunt) ->
           cwd: 'src/css/'
           src: '**'
           dest: 'dist/css'
+        ,
+          # Copy CSS
+          expand: true
+          cwd: 'bower_components/jquery.mb.ytplayer/dist/css/'
+          src: 'jquery.mb.YTPlayer.min.css'
+          dest: 'dist/css/'
+        ,
+          # Copy CSS
+          expand: true
+          cwd: 'bower_components/fullpage.js/dist/'
+          src: 'jquery.fullpage.css'
+          dest: 'dist/css/'
         ]
       js:
         files: [
@@ -124,6 +138,7 @@ module.exports = (grunt) ->
         files:
           'dist/css/screen.css': [
             'dist/css/materialize.css'
+            'dist/css/jquery.mb.YTPlayer.min.css'
             'src/css/main.css'
           ]
 

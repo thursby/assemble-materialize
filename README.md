@@ -69,7 +69,7 @@ executing dynamic code, static sites are much faster than dynamic sites.
 Some great use cases for a static site are:
 
 - Brochure site
-- Marking landing page
+- Marketing landing page
 - Promotional site
 - Movie or video game launch
 
